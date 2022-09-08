@@ -4,7 +4,7 @@
 1.  La commande `which` permet de retourner le chemin vers le fichier de la commande.
 2. Pour trouver un terme sur le manuel il suffit de faire `/texte`.
 3. Pour sortir du manuel il suffit de presser la touche `Q`
-4. `man 6 which`**Chaque section du manuel a une première page, qui présente le contenu de la section. Afficher la première page de la section 6 ; de quoi parle cette section ?**
+4. `man 6 which` La commande n'existe pas avec ses paramètres.
 
 ## Navigation dans l’arborescence des fichiers
 1. Pour aller dans le dossier `/var/log` il faut faire `cd /var/log`.
@@ -45,4 +45,5 @@
 11. La commande `file` renvoi l'extension du fichier.
 12. `echo 'Hello Toto !' > original`. Le changement du fichier `original` entraine les même changement sur le fichier `lien_phy`. La suppression du fichier `original` n'engendre aucune conséquence sur le fichier `lien_phy`.
 13. Un lien symbolique va faire que peux importe le fichier modifier les 2 entraineront une modification sur l'autre. Si le fichier `lien_phy` est supprimé le fichier `lien_sym` l'es également.
-14. 
+14. Le raccourci clavier pour arrêter le défilement est `CTRL + S` et pour le relancer est `CTRL + Q`.
+15. 
