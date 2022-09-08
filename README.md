@@ -46,4 +46,4 @@
 12. `echo 'Hello Toto !' > original`. Le changement du fichier `original` entraine les même changement sur le fichier `lien_phy`. La suppression du fichier `original` n'engendre aucune conséquence sur le fichier `lien_phy`.
 13. Un lien symbolique va faire que peux importe le fichier modifier les 2 entraineront une modification sur l'autre. Si le fichier `lien_phy` est supprimé le fichier `lien_sym` l'es également.
 14. Le raccourci clavier pour arrêter le défilement est `CTRL + S` et pour le relancer est `CTRL + Q`.
-15. 
+15. Pour afficher les 5 première ligne du fichier `/var/log/syslog` il suffit de faire `head -4 /var/log/syslog`. Pour affiches les 15 dernière ligne il suffit de faire `tail -15 /var/log/syslog`. Pour afficher de la ligne 10 à 20 il faut faire `sed -n 10,20p /var/log/syslog`.
