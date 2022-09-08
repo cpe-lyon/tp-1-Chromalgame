@@ -12,4 +12,4 @@
 4. Pour retourner dans le dossier précèdent il faut faire ``.
 5. Le message permission denied apparait.
 6. Le serveur nous renvoi que le paramètre `cd` a la commande `sudo` n'existe pas.
-7. Pour créer cette arborescence : ![arborescence](image.jpg)
+7. Pour créer cette arborescence : ![arborescence](image.png)
