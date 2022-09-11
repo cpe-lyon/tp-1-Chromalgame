@@ -1,3 +1,4 @@
+
 # Exercice 2. Prise en main de l’interpréteur de commandes
 
 ## Manuel
@@ -47,4 +48,26 @@
 13. Un lien symbolique va faire que peux importe le fichier modifier les 2 entraineront une modification sur l'autre. Si le fichier `lien_phy` est supprimé le fichier `lien_sym` l'es également.
 14. Le raccourci clavier pour arrêter le défilement est `CTRL + S` et pour le relancer est `CTRL + Q`.
 15. Pour afficher les 5 première ligne du fichier `/var/log/syslog` il suffit de faire `head -4 /var/log/syslog`. Pour affiches les 15 dernière ligne il suffit de faire `tail -15 /var/log/syslog`. Pour afficher de la ligne 10 à 20 il faut faire `sed -n 10,20p /var/log/syslog`.
-16. 
+16. La commande `dmesg | less` me renvoi que je n'ai pas la permission de faire la commande `dmesg`
+17. Le fichier `/etc/passwd` contient toute les informations relativent aux utilisateurs. Pour afficher la page du manuel il suffit de faire `man passwd`.
+18. La commande qui permet d'afficher la première colonne triée par ordre alphabétique inverse du fichier `/etc/passwd` est `cut -d: -f1 /etc/passwd | sort -r`.
+19. La commande qui permet de connaitre le nombre d'utilisateurs ayant un compte est `cut -d: -f1 /etc/passwd | sort -r | wc -w`.
+20. 
+21. Pour trouver tous les fichiers se nommant `passwd` il faut faire `find / -name 'passwd'`.
+22. Pour que la liste des fichiers soit renvoyé dans un fichier il faut faire la commande `find / -name 'passwd' > ~/list_passwd_files.txt 2> /dev/null`
+23. 
+24. Le fichier `history.log` est dans `/var/log/apt/history.log`.
+25. Le fichier apparait. (Je ne comprend donc pas le pourquoi).
+
+# Exercice 3. Découverte de l’éditeur de texte nano
+1. `cat /var/log/syslog > ~/log.txt`
+2. `CTRL + 6`
+3. `CTRL K` puis `CTRL U`
+4. `ALT + U`
+5. `CTRL + X`
+
+# Exercice 4. Personnalisation du shell
+1. `cat ~/.bashrc > ~/.bashrc_bak`
+2. `nano .bashrc`
+3. 
+4. `PS1)'${debian_chroot:+($debian_chroot)}\[\033[01;035m\][\A]\[\033[00m\] - \[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w[\033[00m\]$`
